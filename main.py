@@ -3187,4 +3187,7 @@ if __name__ == '__main__':
     print(f"  🛡️  MCRCON       : {'Available ✅' if MCRCON_AVAILABLE else 'Not installed ⚠️'}")
     print(f"  👑 Ranks Panel  : /admin/ranks (NEW!)")
     print("=" * 62)
-    socketio.run(app, debug=True, host='0.0.0.0', port=5000, allow_unsafe_werkzeug=True)
+    port = int(os.environ.get("PORT", 5000)) 
+    
+    
+    socketio.run(app, debug=False, host='0.0.0.0', port=port, allow_unsafe_werkzeug=True)
