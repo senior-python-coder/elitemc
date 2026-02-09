@@ -363,16 +363,16 @@ def init_db():
 
     # 5. ANARXIYA RANKLARI (30, 90, UMRBOT variantlari bilan)
     anarchy_ranks = [
-        ('VIP', 'Anarxiya ranki', 2000, 4000, 6000, '/wb, /ec, 7 slot', '#60a5fa'),
-        ('VIP+', 'Anarxiya ranki', 5000, 9000, 13000, '/anvil, /near, Kit VIP+', '#3b82f6'),
-        ('LEGEND', 'Anarxiya ranki', 8000, 15000, 21000, '/time set, Kit Legend', '#8b5cf6'),
-        ('DONATOR', 'Anarxiya ranki', 11000, 20000, 28000, '/jump, Kit Donator', '#d946ef'),
-        ('GOLD', 'Anarxiya ranki', 14000, 24000, 35000, '/feed, Kit Gold', '#eab308'),
-        ('NITRO', 'Anarxiya ranki', 17000, 30000, 43000, '/speed, Kit Nitro', '#f97316'),
-        ('COMET', 'Anarxiya ranki', 22000, 39000, 56000, '/bc, Kit Comet', '#06b6d4'),
-        ('HERO', 'Anarxiya ranki', 32000, 55000, 79000, '/prefix, Kit Hero', '#6366f1'),
-        ('ULTRA', 'Anarxiya ranki', 40000, 70000, 100000, '/ban, Kit Ultra', '#ef4444'),
-        ('PRIME', 'Anarxiya ranki', 80000, 140000, 200000, '/fly, Kit Prime', '#10b981'),
+        ('VIP', 'Boshlang\'ich imkoniyatlar', 2000, 4000, 6000, '/wb, /ec, /disposal, 2 Home, 3 Region', '#60a5fa'),
+        ('VIP+', 'Kengaytirilgan huquqlar', 5000, 9000, 13000, '/hat, /anvil, /setwarp, 3 Home, 4 Region', '#3b82f6'),
+        ('LEGEND', 'Afsonaviy o\'yinchi maqomi', 8000, 15000, 21000, '/time set, /weather, /ec (lvl 4), 4 Home, 5 Region', '#8b5cf6'),
+        ('DONATOR', 'Maxsus donater imtiyozlari', 11000, 20000, 28000, '/jump, /afk, Chat Color, 5 Home, 6 Region', '#d946ef'),
+        ('GOLD', 'Oltin darajadagi qulayliklar', 14000, 24000, 35000, '/feed, /heal, /rename, 5 Home, 7 Region', '#eab308'),
+        ('NITRO', 'Tezkor rivojlanish uchun', 17000, 30000, 43000, '/mute, /speed, /back, 7 Home, 8 Region', '#f97316'),
+        ('COMET', 'Koinot darajasidagi kuch', 22000, 39000, 56000, '/bc, /repair, /feed (others), 10 Home, 9 Region', '#06b6d4'),
+        ('HERO', 'Haqiqiy server qahramoni', 32000, 55000, 79000, '/unmute, /prefix, Nick Color, 15 Home, 10 Region', '#6366f1'),
+        ('ULTRA', 'Deyarli cheklovsiz kuch', 40000, 70000, 100000, '/ban, /unban, /repair all, /ec (spy), 20 Home', '#ef4444'),
+        ('PRIME', 'Serverning mutlaq hukmdori', 80000, 140000, 200000, '/fly, /tags, 0 sec TP, Region Cheksiz, 20 Home', '#10b981'),
     ]
     for name, desc, p30, p90, pUmr, feat, col in anarchy_ranks:
         c.execute(
